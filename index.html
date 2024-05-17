@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <main class="calculator">
+    <div class="content">
+
+      <p id="resultado"></p>
+
+      <br>
+      <br>
+
+      <table class="main">
+        <tr>
+          <td colspan="3" class="special" onclick="clean()">C</td>
+          <td onclick="insert('/')">/</td>
+        </tr>
+
+        <tr>
+          <td onclick="insert('7')">7</td>
+          <td onclick="insert('8')">8</td>
+          <td onclick="insert('9')">9</td>
+          <td onclick="insert('*')">X</td>
+        </tr>
+
+        <tr>
+          <td onclick="insert('4')">4</td>
+          <td onclick="insert('5')">5</td>
+          <td onclick="insert('6')">6</td>
+          <td onclick="insert('-')">-</td>
+        </tr>
+
+        <tr>
+          <td onclick="insert('1')">1</td>
+          <td onclick="insert('2')">2</td>
+          <td onclick="insert('3')">3</td>
+          <td onclick="insert('+')">+</td>
+        </tr>
+
+        <tr>
+          <td onclick="insert('0')">0</td>
+          <td onclick="insert('.')">,</td>
+          <td colspan="2" class="special" onclick="calcular()">=</td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+</body>
+
+<script src="assets/js/main.js"></script>
+
+</html>
